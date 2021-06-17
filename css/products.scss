@@ -1,0 +1,47 @@
+td {
+  vertical-align: middle !important; //字體垂直置中對齊
+}
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+.pattaya {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 500;
+}
+.bg-img {
+  //margin: 0px;
+  //padding: 0px;
+  background: linear-gradient(rgba(255, 255, 255, 0)),
+    url("https://images.unsplash.com/photo-1553051021-9f94520a6cad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")
+      center center fixed repeat-y;
+  background-size: cover;
+  //background-position: center;
+}
+.h100vh {
+  height: 100vh;
+}
+.productsListBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5));
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.pt-20 {
+  padding-top: 80px;
+}
+.r-0 {
+  right: 0;
+}
+.l-0 {
+  left: 0;
+}
+.t-3 {
+  top: 12px;
+}
+.t-5 {
+  top: 20px;
+}

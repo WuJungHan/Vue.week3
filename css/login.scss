@@ -1,0 +1,23 @@
+body {
+  font-family: "Pattaya", sans-serif;
+  line-height: 1.5;
+}
+.NotoSansTC {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.pattaya {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 500;
+}
+.h100vh {
+  height: 100vh;
+}
+.bg-img {
+  background-image: linear-gradient(rgba(255, 255, 255, 0)),
+    url("https://images.unsplash.com/photo-1518715464465-7c691fc9501b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.loginStatusTextBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5));
+}
