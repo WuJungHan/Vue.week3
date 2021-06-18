@@ -35,15 +35,17 @@
             Welcome to login
             <a href="./login.html" class="link-warning animate__animated animate__flipInX animate__slower">FIV5</a>
           </h1>
-          <form class="fs-5 text">
+          <!-- 將type submit按鈕 預設為呼叫 axiosLogin函式-->
+          <form class="fs-5 text" @submit.prevent="axiosLogin">
             <div class="form-floating mb-3">
               <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" name="email"
-                placeholder="e-mail address" required />
+                placeholder="name@example.com" v-model="user.username" required autofocus />
               <label for="loginEmail" class="form-label text-black-50">e-mail address</label>
               <div id="emailHelp" class="form-text text-warning fs-5"></div>
             </div>
             <div class="form-floating mb-5">
-              <input type="password" class="form-control" id="loginPassword" name="email" placeholder="password" />
+              <input type="password" class="form-control" id="loginPassword" name="email" placeholder="password"
+              v-model="user.password"  required/>
               <label for="loginPassword" class="form-label text-black-50">password</label>
               <div id="passwordHelp" class="form-text text-warning fs-5"></div>
               <a href="https://www.google.com/search?q=forgot+password%3F&rlz=1C1CHBF_zh-TWTW896TW896&sxsrf=ALeKk03LxkcYD3kxGB1GGTas2FmDAwYq2g%3A1621885696248&ei=AAOsYOrMDs-Ir7wPwpqTqAo&oq=forgot+password%3F&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAUPilelj4pXpg16h6aABwAHgAgAFPiAGEAZIBATKYAQCgAQKgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwjqzKmGi-PwAhVPxIsBHULNBKUQ4dUDCA4&uact=5"
@@ -51,7 +53,7 @@
             </div>
             <p id="loginStatusText" class="text-warning text-center mb-2 fs-5 loginStatusTextBg"></p>
   
-            <input type="submit" class="btn btn-lg w-100 btn-info text-white" id="loginBtn" value="Login" />
+            <input type="submit" class="btn btn-lg w-100 btn-info text-white" id="loginBtn" value="Login"/>
           </form>
         </div>
       </div>
@@ -59,11 +61,14 @@
   </main>
 
 
+  <!-- axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <!-- popper 提示文框 -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
   <!-- bs5 js  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <!-- axios -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js"></script>
   <!-- 自己的js -->
   <script type="module" src="./js/login.js"></script>
 </body>
